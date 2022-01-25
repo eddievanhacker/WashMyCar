@@ -52,3 +52,12 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function hizoClick() {
+    var nombre = document.getElementById("itNombre").value;
+    var total = document.querySelector('input[name="flexRadioDefault"]:checked').value;
+
+    total = total * 1.19;
+    alert("Estimad@ " + nombre + " el monto total es: $ " + new Intl.NumberFormat('es-CL').format(total));
+    
+}
